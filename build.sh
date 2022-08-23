@@ -1,3 +1,5 @@
+mkdir ./shared_storage
+
  # Builds images
 docker build -f base.Dockerfile -t mk-spark-base .
 
@@ -8,3 +10,5 @@ docker build -f worker.Dockerfile -t mk-spark-worker .
 docker build -f jupyter.Dockerfile -t mk-jupyter .
 
 docker build -f ammonium.Dockerfile -t mk-amm .
+
+docker build -f jupyter-miniconda.Dockerfile -t mk-conda .
